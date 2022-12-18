@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dispaly propertyS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+     header{
+        margin: auto;
+        border: 2px solid black;
+        width: 1200px;
+        /* dekho margin auto kamtlb hota hai ki left or right ki space ho jae same or element aa jae beech mai lekin jo yh header element hota hai vo block element hota hai isslein isko hume width deni padegi   */
+        /* display: block; ka mtlb hoga pura block lekr baith jaega.  */
+        /* or display inline ka mtlb hota hai jitni usko requirement hai vo utni hi lega.  */
+        /* display: inline; */
+     }
+
+    img{
+        width: 50px;
+        display: block;
+        margin: auto;
+    }
+
+    h3{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .class{
+       background-color: aqua;
+       border: 4px solid black;
+       margin: 0%;
+       padding: 23px;
+       display: inline-block;
+       width: 33%;
+       box-sizing: border-box;
+       /* box sizing property se margin utni hi rahegi including padding and margin,  */
+    }
+
+    conainer{
+        margin: auto;
+        width: 1200px;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Image not found">
+        <h3>Welcome to my world</h3>
+    </header>
+    <div class="container">
+        <div class="class">
+            <h4>Sab badiya hai</h4>
+            <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora! Libero recusandae ratione sapiente nihil iure veniam vitae est, tempore possimus inventore at voluptate nemo doloribus ipsum rem perspiciatis debitis nesciunt et quia commodi?</p>
+        </div>
+        <div class="class">
+            <h4>Sab badiya hai</h4>
+            <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora! Libero recusandae ratione sapiente nihil iure veniam vitae est, tempore possimus inventore at voluptate nemo doloribus ipsum rem perspiciatis debitis nesciunt et quia commodi?</p>
+        </div>
+        <div class="class">
+            <h4>Sab badiya hai</h4>
+            <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora! Libero recusandae ratione sapiente nihil iure veniam vitae est, tempore possimus inventore at voluptate nemo doloribus ipsum rem perspiciatis debitis nesciunt et quia commodi?</p>
+        </div>
+    </div>
+</body>
+</html>

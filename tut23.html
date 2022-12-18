@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+     .navbar{
+        background-color: black;
+        border-radius: 13px;
+     }
+
+     .navbar ul{
+        overflow: auto;
+     }
+
+     .navbar li{
+        float: left;
+        list-style: none;
+        /* pehle humne kya kiya ki background colour de diya green phir humne float de diya left ka ab humare bullets aare the toh humne pehle unko hata diyalist style none karke. Lekin yh karne se humara background colour jo hai vo hogya hai overlap toh phir humne overflo auto ka use kiya nav ul mai. */
+        margin: 13px 13px ;
+     }
+
+     .navbar li a{
+        padding: 4px 4px;
+        text-decoration: none;
+        color: white ;
+     }
+     .search{
+        padding: 13px 13px;
+        color: white;
+        float: right;
+     }
+     .navbar input{
+        border: 2px solid white;
+        border-radius: 4px;
+        padding: 3px 5px;
+        width: 150px;
+     }
+     .navbar li a:hover{
+        background-color: aquamarine;
+        color: red;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+<ul>
+    <li> <a href="#"> Home</a></li>
+    <li> <a href="#">Services</a></li>
+    <li> <a href="#">Contact Us</a></li>
+    <li> <a href="#">About</a></li>
+    <!-- href equal to pound symbol jab hota hai toh uska mtlb hota hai kuch ny empty -->
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="Search this website">
+      <!-- placeholder hum tab likhte hain jab hume search bar mai kuch likha hua cahein hota hai. -->
+    </div>
+</ul>
+
+        </nav>
+    </header>
+</body>
+</html>

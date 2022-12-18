@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+       
+       body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       .container{
+        width: 1000px;
+        border: 4px solid black;
+        background-color: aqua;
+        margin: auto;
+        /* margin auto ki help se vo apne aap margin calculate krta hai or khud hi lga deta hai centre mai.  */
+        box-sizing: border-box;
+       }
+       .items{
+         border: 4px solid blueviolet;
+         margin: 12px 14px;
+         padding: 12px 14px;
+         background-color: aquamarine;
+       }
+
+       #fruits{
+        float: left;
+        width: 48%;
+       }
+
+       #Vegetables{
+        float: right;
+        width: 48%;
+       }
+
+       #computer{
+        /* float: right; */
+        width: 100%;
+        clear: both;
+        /* clear left or right bhi use kr skte hai taaki koi bhi ek dusre ko overlap na kare.  */
+       }
+        p{
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 450px;
+        }
+        /* jo niche likhi hui property hoti hai uski priority jyda hoti hai.  */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="items">
+        <h3>fruits</h3>
+        <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde laudantium accusantium modi quidem incidunt voluptates quisquam voluptate laboriosam veritatis ut, voluptatem minima accusamus commodi repellat pariatur beatae sunt cum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque, magni animi reprehenderit ipsa vel necessitatibus. In porro sint illo tempora quis ad. Veniam sint nihil temporibus asperiores quod architecto officia corrupti?.</p>
+        </div>
+
+        <div id="Vegetables" class="items">
+            <h3>vegetable</h3>
+            <p id="vegetablespara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit repudiandae doloribus, esse quas iusto aut culpa inventore nemo asperiores, natus necessitatibus excepturi? Nihil distinctio aliquam dignissimos itaque excepturi. Quo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellendus quae, dolorem exercitationem obcaecati rem possimus sed eos porro cupiditate provident quod dolor pariatur repellat, debitis odio cumque inventore iusto ut? Ratione., deserunt!</p>
+            </div>
+
+            <div id="computer" class="items">
+                <h3>computer</h3>
+                <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus optio aut quos accusamus neque placeat. Soluta placeat dolore enim debitis voluptas earum aliquam, voluptates quas ullam? Reprehenderit, nulla at.</p>
+                </div>
+    </div>
+</body>
+</html>

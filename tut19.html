@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and background</title>
+    <style>
+        #firstpara{
+            background-color: red;
+            height: 300px;
+            width: 200px;
+            border-width: 2px;
+            /* agar hum sirf border width daal denge without using border style jo ki solid hoga toh koi fark nahi padega.  */
+            /* border-color: green;
+            border-style: solid;*/
+            border-radius: 11px; 
+            /* border radius humuse krte hai rounded corners laane ke lein.  */
+            /* agr hume sab ek sath hi dena hai toh hum use karenge  */
+            border: 11px solid green;
+        }
+
+        #secondpara {
+            background-color: green;
+            height: 300px;
+            width: 200px;
+            border-bottom: 11px solid rgb(89, 11, 246);
+            border-top: 11px solid pink;
+            border-left: 11px solid black;
+            border-right: 11px solid purple;
+            /* border-radius: 11px; */
+            border-top-left-radius: 11px;
+        }
+        #thirdpara {
+            height: 300px;
+            width: 400px;
+            background-image:url(shubhi.jpg.png);
+            border: 2px solid red;
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-position: 122px top; */
+            /* background-position: 22px 89px; */
+            /* top-top top-centre centre-top bhi kr skte hain.  */
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstpara">This is a paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara">This is second paragraph.</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdpara">This is third paragraph.</p>
+
+</body>
+</html>

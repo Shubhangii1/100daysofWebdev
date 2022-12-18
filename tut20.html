@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            /* iski wajah se sare mai hi yh hojaega or already hume margin or padding 0 dikhengi jb tak hum overwrite na kare niche se unko.  */
+        }
+        body{
+            background-color: aqua;
+        }
+    .container {
+        background-color: burlywood;
+        border: 3px solid red;
+        /* padding: 10px; */
+        /* padding-left padding-top: aise hi bottom or right bhi kr skte hain. ; */
+        /* padding: 20px 30px 1px 70px; */
+        /* top right bottom and left.  */
+        padding: 30px 20px;
+        /* y(top/bottom) x(left/right) */
+        margin: 12px;
+        /* same for margin. */
+        border-radius: 20px;
+        height: 150px;
+        width: 300px;
+        /* ab jaise jaise mai padding badhaungi vaise vaise width change hoti jaegi aisa isslein jo actual width hoti hai usmai paddhing margin sab kuch add hoti hai.  */
+        box-sizing: border-box;
+        /* is ki help se humare width same rahegi ek dum  */
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>This is a heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet sunt?</p>
+</div>
+<div class="container">
+    <h3>This is a heading</h3>
+    <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet sunt?</p>
+</div>
+<div class="container">
+    <h3>This is a heading</h3>
+    <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet sunt?</p>
+</div>
+<div class="container">
+    <h3>This is a heading</h3>
+    <p id="fourth">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rerum eveniet sunt?</p>
+</div>
+</body>
+</html>

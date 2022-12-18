@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form
+
+    </title>
+</head>
+<body>
+    <h2>This is HTML form tutorial</h2>
+    <form action="backend.php">
+        <label for="name">name</label>
+        <div>  Name: <input type="text" id="name">  </div>
+        <br>
+        <!-- division tag hum use krte hai kyunki yeh pura block le leta hai end tak or agle element ko niche hi aana pdta hai  -->
+        <!-- br tag recommended nhi hai kyunki yh margin or padding hum css ki help se karenge  -->
+        <div>
+            Role: <input type="text">
+        </div>
+        <br>
+        <div>
+           Email: <input type="email" name="" id="">
+        </div>
+        <br>
+        <!-- agar hum input colon em laga kr enter karenge tb hume email mil jaega apna aap hi id or name mil jaega  -->
+        <br>
+        <div>
+            <input type="date" name="my date">
+        </div>
+        <br>
+        <div>
+         Bonus:   <input type="number" name="Bonus">
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="my car" id="car">
+            <option value="swf">swift</option>
+            <option value="ind">Indica</option>
+        </select>
+        </div>
+        <br>
+        <div>
+         Are you elligible?   <input type="checkbox" name="My elligibility">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="my Gender"> FeMale <input type="radio" name="my Gender">
+        </div>
+        <br>
+        <div>
+           Write About yourself <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div><input type="submit" value="Submit Now"></div>
+        <br><div>
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- Here we will use internal css  -->
+    <style>
+        /* eleement selector  */
+        p{
+            border: 2px solid rebeccapurple;
+        }
+        /* humne jo yh pound symbol use kiya hai vo kiya hai humne id ke lein kiya hai  */
+        #redelement{
+            color: red;
+        }
+        .bgblue{
+            background-color: blueviolet;
+        }
+        footer, span{
+           background-color: hotpink;
+        }
+        /* dekho agar hum style ke andar koi comment likhenge jaise upr likhe hai toh vs code asani se pehchan jaega ki yh hai css mai hai. */
+    </style>
+</head>
+<body>
+    <h3>Css selector tutorial</h3>
+    <p id="redelement">This is the simple example to demonstrate css selectors</p>
+    <p class="bgblue">This is the another simple example to demonstrate css selectors</p>
+<div>
+    <p>This is the third simple example to demonstrate css selectors</p>
+</div>
+<!-- div ke andar ka bhi paragraph red hojaega kyunki humne saare paragraph ko red krne bol diya hai. -->
+<!-- humne upar p mai use kiya hai element selector. -->
+<!-- ab agr hum cahate hai koisa ek hi red ho ya hum sare paragraph ko alag alag color se krna cahate hai toh hum use karenge id ka. or jaise ki humne pichle lecture mai pdha tha k id sirf ek ka hi naam ho skta hai do elementki same id ni ho skti. -->
+<span>This is span.</span>
+<footer>This is footer</footer>
+</body>
+</html>
+<!-- Toh ismai humne sabse pehle dekha element selector ko phir id selector ko phir class selector ko and at last grouping selectors.  -->

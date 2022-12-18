@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute, Relative and sticky in CSS</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        /* css positions are of following types 1-Static(by default) 2- Relative 3- Absolute 4- fixed 5- Sticky. */
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: greenyellow;
+            width: 150px;
+            height: 150px;
+            margin: 4px;
+        }
+
+        #box1{
+           /* position fixed se yh hota hai ki hum kitna bhi scroll krle vo dibba wahin hi rahega fixed hi. yh hum tab use krte hai jab hume chat box jaisa kuch bnana ho.*/
+            position: fixed;  /* relative to browsers window */
+            left: 4px;
+            bottom: 2px;
+        }
+
+        #box2{
+            position: absolute;
+            top: 34px;
+            left: 34px;
+            /* absolute mai vo apne parent ke relative shift hota hai yaani container ke or gap ni chta hai   */
+        }
+        #box3{
+            /* relative position mtlb hota hai ki jahn vo hai usse relative ho jae or yh gap leave krta hai.  */
+            position: relative;
+            top: 34px;
+            left: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">
+          chat 
+    </div>
+    <div class="box" id="box2">
+             2
+    </div>
+    <div class="box" id="box3">
+            3
+    </div>
+    <div class="box" id="box4">
+              4
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+     .container{
+        background-color: aqua;
+        border: 4px solid green;
+        padding: 34px;
+        margin: 34px auto;
+        width: 566px;
+     }
+
+     a{
+        text-decoration: none;
+        /* yeh hum use krte hai niche se line hatane ke lein.  */
+     }
+
+     a:hover{
+        color:black;
+     }
+
+     a:visited{
+           background-color: brown;
+     }
+     a:active{
+        background-color: blueviolet;
+     }
+     .btn1{
+        background-color:hotpink;
+        border: 2px solid green;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+        font-size: 12px;
+        font-style: bold;
+     }
+     .btn1:hover{
+        color: palevioletred;
+        background-color:black;
+        /* jab hum udhr click karenge toh jo color change honge unko hum bolte hain hover krna.  */
+     }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolor earum voluptatibus architecto quam porro, natus ab quas iusto necessitatibus atque officia repellat eaque vitae, fugiat eveniet aspernatur. Mollitia aliquid porro exercitationem a velit!</p>
+    <a href="https://www.google.com/" class="btn1">Read More</a>
+    <button class="btn1">Contact Us</button>
+    </div>
+</body>
+</html>
